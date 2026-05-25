@@ -1,0 +1,93 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+* {
+    font-family: "Montserrat", Verdana, sans-serif;
+}
+
+h1, h2, b, span {
+    font-family: "Fira Sans", Arial, sans-serif;
+}
+
+b {
+    font-weight: normal;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: black solid 4px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: black solid 4px;
+}
+
+nav a {
+    font-weight: 600;
+    margin: 4rem 4rem 0;
+}
+
+nav a.active {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a, a:visited, a:active, a:hover, a:focus {
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-color: black white;
+    scrollbar-width: thin;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 3rem 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 4rem;
+}
+
+h3 {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h3 + p {
+    margin: 0;
+}
