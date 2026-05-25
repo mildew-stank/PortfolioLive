@@ -5,7 +5,7 @@ function Information() {
     <>
       <article>
         <h2>TRACKING INFORMATION</h2>
-        <Fact title="Name">stank</Fact>
+        <Fact title="Name">mildew-stank</Fact>
       </article>
     </>
   );
