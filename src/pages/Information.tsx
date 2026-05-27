@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchFacts } from "../api.ts";
 import Fact from "../components/Fact";
+import SkeletonFact from "../skeletons/SkeletonFact";
 
 interface FactData {
   Id: number;
@@ -25,9 +26,22 @@ function Information() {
       });
   }, []);
 
-  // TODO: make a skeleton
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  if (loading)
+    return (
+      <>
+        <h2>TRACKING INFORMATION</h2>
+        <SkeletonFact />
+        <SkeletonFact />
+        <SkeletonFact />
+      </>
+    );
+  if (error)
+    return (
+      <>
+        <h2>TRACKING INFORMATION</h2>
+        <div>Error: {error}</div>
+      </>
+    );
 
   return (
     <>

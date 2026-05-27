@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchProjects } from "../api";
 import Project from "../components/Project";
+import SkeletonGeneric from "../skeletons/SkeletonGeneric";
 
 interface ProjectData {
   Id: number;
@@ -26,9 +27,22 @@ function Projects() {
       });
   }, []);
 
-  // TODO: make a skeleton
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  if (loading)
+    return (
+      <>
+        <h2>MEANINGLESS PROJECTS</h2>
+        <SkeletonGeneric />
+        <SkeletonGeneric />
+        <SkeletonGeneric />
+      </>
+    );
+  if (error)
+    return (
+      <>
+        <h2>MEANINGLESS PROJECTS</h2>
+        <div>Error: {error}</div>
+      </>
+    );
 
   return (
     <>

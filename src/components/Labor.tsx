@@ -15,7 +15,9 @@ function Labor({
         {status} at <span>{company}</span>
       </h3>
       <p>{role}</p>
-      <p><div dangerouslySetInnerHTML={{ __html: children }} /></p>
+      <p>
+        <div dangerouslySetInnerHTML={{ __html: children }} />
+      </p>
     </article>
   );
 }

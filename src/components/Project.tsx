@@ -13,7 +13,9 @@ function Project({
       <a href={url} target="_blank" rel="noopener noreferrer">
         {url}
       </a>
-      <p><div dangerouslySetInnerHTML={{ __html: children }} /></p>
+      <p>
+        <div dangerouslySetInnerHTML={{ __html: children }} />
+      </p>
     </article>
   );
 }

@@ -1,5 +1,6 @@
 import type { D1Database } from "@cloudflare/workers-types";
 import { Hono } from "hono";
+import { serveStatic } from "hono/cloudflare-workers";
 
 type Bindings = {
   DB: D1Database;

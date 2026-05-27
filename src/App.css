@@ -91,3 +91,48 @@ ul {
 h3 + p {
     margin: 0;
 }
+
+.skeleton {
+    animation: pulse 1.5s ease-in-out infinite;
+    background: gray;
+    border-radius: 0.5rem;
+}
+
+.skeletonFactTitle {
+    height: 1rem;
+    width: 6rem;
+    margin: 1rem 0 0.125rem 0;
+}
+
+.skeletonFactBody {
+    height: 1rem;
+    width: 12rem;
+    margin-top: 0.125rem;
+}
+
+.skeletonGenericTitle {
+    height: 1rem;
+    width: 12rem;
+    margin: 1rem 0 0.125rem 0;
+}
+
+.skeletonGenericSub {
+    height: 1rem;
+    width: 24rem;
+    margin: 0.125rem 0;
+}
+
+.skeletonGenericBody {
+    height: 1rem;
+    width: 40rem;
+    margin: 1rem 0;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
