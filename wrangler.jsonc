@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "portfoliolive",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-05-27",
   "observability": {
     "enabled": true
@@ -13,7 +14,8 @@
     }
   ],
   "assets": {
-    "not_found_handling": "single-page-application"
+    "directory": "dist",
+    "not_found_handling": "none"
   },
   "compatibility_flags": [
     "nodejs_compat"
