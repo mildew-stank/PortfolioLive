@@ -5,6 +5,13 @@
   "observability": {
     "enabled": true
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "portfolio",
+      "database_id": "0b831f57-5b88-4bfb-874a-ab65831f9e55"
+    }
+  ],
   "assets": {
     "not_found_handling": "single-page-application"
   },
