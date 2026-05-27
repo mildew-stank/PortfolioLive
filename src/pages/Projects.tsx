@@ -4,7 +4,10 @@ function Projects() {
   return (
     <>
       <h2>MEANINGLESS PROJECTS</h2>
-      <Project title="Website" url="https://github.com/mildew-stank/PortfolioLive">
+      <Project
+        title="Website"
+        url="https://github.com/mildew-stank/PortfolioLive"
+      >
         <b>This</b>: Portfolio made with React, Vite, and TypeScript.
       </Project>
     </>
