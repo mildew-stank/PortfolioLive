@@ -1,10 +1,8 @@
-import type { ReactNode } from "react";
-
-function Fact({ title, children }: { title: string; children: ReactNode }) {
+function Fact({ title, children }: { title: string; children: string }) {
   return (
     <article>
       <h3>{title}</h3>
-      <p>{children}</p>
+      <p><div dangerouslySetInnerHTML={{ __html: children }} /></p>
     </article>
   );
 }

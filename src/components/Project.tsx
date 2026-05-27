@@ -1,5 +1,3 @@
-import type { ReactNode } from "react";
-
 function Project({
   title,
   url,
@@ -7,7 +5,7 @@ function Project({
 }: {
   title: string;
   url: string;
-  children: ReactNode;
+  children: string;
 }) {
   return (
     <article>
@@ -15,7 +13,7 @@ function Project({
       <a href={url} target="_blank" rel="noopener noreferrer">
         {url}
       </a>
-      <p>{children}</p>
+      <p><div dangerouslySetInnerHTML={{ __html: children }} /></p>
     </article>
   );
 }

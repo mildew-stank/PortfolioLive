@@ -1,5 +1,3 @@
-import type { ReactNode } from "react";
-
 function Labor({
   status,
   company,
@@ -9,7 +7,7 @@ function Labor({
   status: string;
   company: string;
   role: string;
-  children: ReactNode;
+  children: string;
 }) {
   return (
     <article>
@@ -17,7 +15,7 @@ function Labor({
         {status} at <span>{company}</span>
       </h3>
       <p>{role}</p>
-      <p>{children}</p>
+      <p><div dangerouslySetInnerHTML={{ __html: children }} /></p>
     </article>
   );
 }
