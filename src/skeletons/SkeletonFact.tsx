@@ -1,8 +1,8 @@
 function SkeletonFact() {
   return (
     <article>
-      <div className="skeleton skeletonFactH3"></div>
-      <div className="skeleton skeletonFactP"></div>
+      <div className="skeleton skeletonFactTitle"></div>
+      <div className="skeleton skeletonFactBody"></div>
     </article>
   );
 }
