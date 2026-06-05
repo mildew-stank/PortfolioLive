@@ -1,4 +1,4 @@
-function SkeletonFact() {
+function SkeletonGeneric() {
   return (
     <article>
       <div className="skeleton skeletonGenericTitle"></div>
@@ -8,4 +8,4 @@ function SkeletonFact() {
   );
 }
 
-export default SkeletonFact;
+export default SkeletonGeneric;
